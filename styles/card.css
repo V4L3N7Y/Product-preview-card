@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* Mountserrat: font-family: 'Montserrat', sans-serif 
+   Fraunces: font-family: 'Fraunces', serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+   /* Primary */
+   --Dark-cyan:hsl(158, 36%, 37%);
+   --Cream:hsl(30, 38%, 92);
+   /* Neutral */
+   --Very-dark-blue: hsl(212, 21%, 14%);
+   --Dark-grayish-blue: hsl(228, 12%, 48%);
+   --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: beige;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px 25px;
+}
+
+main {
+    background-color: var(--White);
+    border-radius: 12px;
+    min-width: 22rem;
+    min-height: 35rem;
+}
+
+.container img {
+    max-height: 220px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    min-width: 100%;
+}
+
+.padding-bottom {
+    padding: 1.2rem 1.5rem 0;
+}
+
+}
+
+.perfume {
+    letter-spacing: 5px;
+    color: var(--Dark-grayish-blue);
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h1-text {
+    font-family: 'Fraunces', serif;
+    color: var(--Very-dark-blue);
+
+}
+
+.p-detail {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    line-height: 20px;
+    color: var(--Dark-grayish-blue);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.discount-price {
+    font-family: 'Fraunces', serif;
+    color: var(--Dark-cyan);
+    font-size: xx-large;
+}
+
+.original-price {
+    text-decoration-line: line-through;
+    font-size: small;
+    color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+    min-height: 2.2rem;
+    min-width: 20rem;
+    background-color: var(--Dark-cyan);
+    color:aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}  
+
+
+/* Desktop */
+
+@media only screen and (min-width: 600px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 25px 25px;
+    }
+   
+    main{
+        display: flex;
+        background-color: var(--White); 
+        border-radius: 12px;  
+        max-width: 35rem;
+        max-height: 35rem;  
+    } 
+
+    .container img {   
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        min-width: 50%;
+    }
+
+    .padding-bottom {
+        padding: 2.2rem 1.5rem 0;
+    }
+    .h1-text {
+        max-width: 16rem;
+    }
+
+    .p-detail {
+        max-width: 16rem;
+    }
+
+    button {
+        min-height: 2.2rem;
+        min-width: 14rem;
+    } 
+    
+
+}
+
+
+
+
